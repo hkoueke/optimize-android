@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FF9800</color>
+    <color name="primary_dark">#F57C00</color>
+    <color name="accent">#FF5722</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="chip_backcolor">#607D8B</color>
+    <color name="button_transfer_enabled">#FF26A69A</color>
+
+    <color name="app_background">#fff1f1f1</color>
+    <color name="cardview_background">#ffffffff</color>
+    <!--<color name="dark_grey_dark">#ff434a54</color>
+    <color name="dark_grey_light">#ff656d78</color>-->
+    <color name="expand_drawable">#757575</color>
+    <color name="home_as_up_icon">#ffffffff</color>
+
+    <color name="pricing_item_background">#ffffffff</color>
+    <color name="result_header">#ffffffff</color>
+    <color name="searchbar_btn_background">#ffffffff</color>
+    <color name="searchbar_btn_text_color">@color/primary</color>
+    <color name="toolbar_title_text">#ffffffff</color>
+</resources>

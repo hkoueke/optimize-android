@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/preference_category_settings"
+        app:initialExpandedChildrenCount="2"
+        app:key="settings_base">
+
+        <androidx.preference.MultiSelectListPreference
+            android:enabled="true"
+            android:icon="@drawable/ic_signal_cellular_24"
+            android:title="@string/preference_category_settings_pref_providers_title"
+            app:dialogTitle="@string/preference_category_settings_pref_providers_title_short"
+            app:key="settings_providers"
+            app:persistent="true"
+            app:singleLineTitle="true" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:icon="@drawable/ic_cloud_24"
+            android:title="@string/preference_category_settings_pref_auto_update_title"
+            app:defaultValue="@bool/auto_update_enabled"
+            app:key="settings_auto_update_enabled"
+            app:persistent="true"
+            app:summaryOff="@string/preference_category_settings_pref_auto_update_off"
+            app:summaryOn="@string/preference_category_settings_pref_auto_update_on" />
+
+        <androidx.preference.ListPreference
+            android:dependency="settings_auto_update_enabled"
+            android:icon="@drawable/ic_schedule_24"
+            android:title="@string/preference_category_settings_pref_update_frequency_title"
+            app:defaultValue="@string/list_update_freq_default"
+            app:dialogTitle="@string/preference_category_settings_pref_update_frequency_title"
+            app:entries="@array/list_update_freq_entries"
+            app:entryValues="@array/list_update_freq_entries_values"
+            app:key="settings_update_freq"
+            app:persistent="true"
+            app:singleLineTitle="true"
+            app:useSimpleSummaryProvider="true" />
+
+        <androidx.preference.Preference
+            android:enabled="false"
+            android:icon="@drawable/ic_update_24"
+            android:summary="@string/preference_category_settings_pref_manual_update_summary"
+            android:title="@string/preference_category_settings_pref_manual_update_title"
+            app:key="settings_manual_update"
+            app:persistent="true"
+            app:singleLineTitle="true" />
+
+        <androidx.preference.ListPreference
+            android:icon="@drawable/ic_color_lens_24"
+            android:title="@string/preference_category_theme"
+            app:defaultValue="@string/list_theme_default"
+            app:dialogTitle="@string/preference_category_theme"
+            app:entries="@array/list_theme_entries"
+            app:entryValues="@array/list_theme_values"
+            app:isPreferenceVisible="false"
+            app:key="settings_theme"
+            app:persistent="true"
+            app:singleLineTitle="true"
+            app:useSimpleSummaryProvider="true" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory android:title="@string/preference_category_transactions">
+        <androidx.preference.ListPreference
+            android:icon="@drawable/ic_list_checked_24"
+            android:title="@string/preference_category_transactions_search_mode_title"
+            app:defaultValue="@string/list_transactions_search_mode_default"
+            app:dialogTitle="@string/preference_category_transactions_search_mode_title_short"
+            app:entries="@array/list_transactions_search_mode_entries"
+            app:entryValues="@array/list_transactions_search_mode_values"
+            app:key="transactions_search_mode"
+            app:persistent="true"
+            app:singleLineTitle="true"
+            app:useSimpleSummaryProvider="true" />
+
+        <androidx.preference.ListPreference
+            android:dialogTitle="@string/preference_category_transactions_threshold_title"
+            android:icon="@drawable/ic_filter_5_24"
+            android:title="@string/preference_category_transactions_threshold_title"
+            app:defaultValue="@string/list_transactions_threshold_default"
+            app:entries="@array/list_transactions_threshold_entries"
+            app:entryValues="@array/list_transactions_threshold_values"
+            app:key="transactions_threshold"
+            app:persistent="true"
+            app:singleLineTitle="true"
+            app:useSimpleSummaryProvider="true" />
+
+        <androidx.preference.ListPreference
+            android:icon="@drawable/ic_filter_list_24"
+            android:title="@string/preference_category_transactions_filter_by_title"
+            app:defaultValue="@string/list_transactions_filter_default"
+            app:dialogTitle="@string/preference_category_transactions_filter_by_title"
+            app:entries="@array/list_transactions_filter_by_entries"
+            app:entryValues="@array/list_transactions_filter_by_values"
+            app:key="transactions_filter_by"
+            app:persistent="true"
+            app:singleLineTitle="true"
+            app:useSimpleSummaryProvider="true" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory android:title="Services">
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:icon="@drawable/ic_local_phone_24"
+            android:title="@string/preference_category_services_dial_behaviour_title"
+            app:defaultValue="false"
+            app:key="services_dial_behavior"
+            app:persistent="true"
+            app:summaryOff="@string/preference_category_services_dial_behaviour_summary_off"
+            app:summaryOn="@string/preference_category_services_dial_behaviour_summary_on" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/preference_category_about"
+        app:initialExpandedChildrenCount="2"
+        app:key="settings_about">
+
+        <androidx.preference.Preference
+            android:icon="@drawable/ic_favorite_24"
+            android:summary="@string/preference_category_about_pref_share_summary"
+            android:title="@string/preference_category_about_pref_share_title"
+            app:key="about_share"
+            app:persistent="false"
+            app:singleLineTitle="true" />
+
+        <androidx.preference.Preference
+            android:icon="@drawable/ic_star_rate_24"
+            android:summary="@string/preference_category_about_pref_rate_summary"
+            android:title="@string/preference_category_about_pref_rate_title"
+            app:key="about_rate"
+            app:persistent="false"
+            app:singleLineTitle="true">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/app_playstore_link" />
+
+        </androidx.preference.Preference>
+
+        <androidx.preference.Preference
+            android:icon="@drawable/ic_face_24"
+            android:summary="@string/preference_category_about_pref_developers_summary"
+            android:title="@string/preference_category_about_pref_developers_title"
+            app:key="about_mailto_developers"
+            app:persistent="false"
+            app:singleLineTitle="true" />
+
+        <androidx.preference.Preference
+            android:icon="@drawable/ic_code_24"
+            android:title="@string/preference_category_about_pref_version_title"
+            app:key="about_version"
+            app:persistent="false"
+            app:singleLineTitle="true" />
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="autosize_text_sizes">
+        <item>10sp</item>
+        <item>11sp</item>
+        <item>12sp</item>
+        <item>13sp</item>
+        <item>14sp</item>
+        <item>15sp</item>
+        <item>16sp</item>
+        <item>17sp</item>
+        <item>18sp</item>
+    </array>
+    <array name="autosize_text_sizes_int">
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+    </array>
+
+    <string-array name="list_operation_type">
+        <item>@string/pricing_operation_type_inbound_transactions</item>
+        <item>@string/pricing_operation_type_outbound_transactions</item>
+        <item>@string/pricing_operation_type_withdrawals</item>
+    </string-array>
+
+    <string-array name="list_theme_entries">
+        <item>@string/string_array_theme_entries_battery</item>
+        <item>@string/string_array_theme_entries_light</item>
+        <item>@string/string_array_theme_entries_dark</item>
+    </string-array>
+    <string-array name="list_theme_values">
+        <item>3</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="list_transactions_filter_by_entries">
+        <item>@string/string_array_transactions_filter_by_amount_saved</item>
+        <item>@string/string_array_transactions_filter_by_fee_saved</item>
+    </string-array>
+    <string-array name="list_transactions_filter_by_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="list_transactions_search_mode_entries">
+        <item>@string/string_array_transactions_search_mode_prefer_highest_savings</item>
+        <item>@string/string_array_transactions_search_mode_prefer_lowest_transactions</item>
+    </string-array>
+    <string-array name="list_transactions_search_mode_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="list_transactions_threshold_entries">
+        <item>@string/string_array_transactions_threshold_all_tree</item>
+        <item>@string/string_array_transactions_threshold_three</item>
+        <item>@string/string_array_transactions_threshold_two</item>
+    </string-array>
+    <string-array name="list_transactions_threshold_values">
+        <item>0</item>
+        <item>3</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="list_update_freq_entries">
+        <item>@string/string_array_update_freq_entries_system_managed</item>
+    </string-array>
+    <string-array name="list_update_freq_entries_values">
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_result_item_actions">
+        <item>@string/string_array_list_result_item_menu_transfer_amount</item>
+        <!--  <item>@string/string_array_list_result_item_menu_transfer_without_fees</item>-->
+        <item>@string/string_array_list_result_item_menu_share</item>
+    </string-array>
+
+
+</resources>

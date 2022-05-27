@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--Header for the transfer money form-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?listPreferredItemPaddingStart"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="?listPreferredItemPaddingStart"
+                android:layout_marginTop="?listPreferredItemPaddingStart"
+                android:layout_marginBottom="?listPreferredItemPaddingStart"
+                android:layout_toStartOf="@+id/material_toggle_group"
+                android:singleLine="true"
+                android:text="@string/action_transfer_money"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:autoSizePresetSizes="@array/autosize_text_sizes"
+                app:autoSizeTextType="uniform" />
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/material_toggle_group"
+                style="?attr/materialButtonToggleGroupStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end|center"
+                android:layout_marginStart="?listPreferredItemPaddingStart"
+                android:layout_marginEnd="?listPreferredItemPaddingEnd"
+                android:orientation="horizontal"
+                app:selectionRequired="true"
+                app:singleSelection="true" />
+
+        </RelativeLayout>
+
+        <View style="@style/Divider.Horizontal" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="?listPreferredItemPaddingStart"
+        android:layout_marginEnd="?listPreferredItemPaddingEnd"
+        android:layout_marginBottom="?listPreferredItemPaddingStart"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_account_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="?listPreferredItemPaddingEnd"
+                android:hint="@string/transfer_funds_input_number_hint"
+                app:counterEnabled="true"
+                app:endIconMode="clear_text"
+                app:errorEnabled="true"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                app:layout_constraintEnd_toStartOf="@+id/chip_get_contacts"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_get_contacts"
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contacts"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:chipIcon="@drawable/ic_account_circle_white_48"
+                app:chipIconTint="@color/chip_backcolor"
+                app:chipIconVisible="true"
+                app:layout_constraintBottom_toBottomOf="@id/til_account_number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/til_account_number"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_amount_to_send"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/transfer_funds_input_amount_hint"
+                app:endIconMode="clear_text"
+                app:errorEnabled="true"
+                app:helperTextEnabled="true"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                app:layout_constraintEnd_toEndOf="@+id/til_account_number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/til_account_number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkbox_withdrawal_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/transfer_funds_include_withdrawal_fee"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_account_number"
+                app:layout_constraintVertical_bias="0.609" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="@string/transfer_funds_action_transfer_hint"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:backgroundTint="@color/btn_transfer_bg_color_selector" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

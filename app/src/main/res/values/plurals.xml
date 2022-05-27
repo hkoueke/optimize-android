@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pricing_header_providers_count_plurals">
+        <item quantity="one">%d fournisseur</item>
+        <item quantity="other">%d fournisseurs</item>
+    </plurals>
+    <plurals name="providers_count_plurals">
+        <item quantity="one">et %d autre</item>
+        <item quantity="other">et %d autres</item>
+    </plurals>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="action_prices">Grille tarifaire</string>
+    <string name="action_pricing_links">Sources des tarifs</string>
+    <string name="action_pay_bills">Factures</string>
+    <string name="action_transfer_money">Transfert d\'argent</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="action_account_balance">Solde</string>
+
+    <string name="app_name" translatable="false">Optimize</string> <!--DO NOT CHANGE-->
+    <string name="app_playstore_link" translatable="false">https://play.google.com/store/apps/details?id=com.izigo.optimized</string>
+
+    <string name="error_dialog_select_at_least_one_provider">Pour obtenir des résultats à vos requêtes, vous devez sélectionner au moins un fournisseur</string>
+    <string name="error_network_disconnected_check_settings">Vous semblez ne pas être connecté à Internet. Activez les données mobiles ou le Wifi, puis essayez à nouveau</string>
+    <string name="error_network_no_data_view_desc">Une connexion à internet est nécessaire afin de télécharger les grilles tarifaires</string>
+    <string name="error_network_no_data_view_sync">Télécharger</string>
+    <string name="error_network_unavailable">Aucune connexion à Internet</string>
+
+    <string name="expand_button_title" tools:override='true'>Plus d\'options</string>
+    <string name="list_theme_default" translatable="false">3</string>
+    <string name="list_transactions_filter_default" translatable="false">1</string>
+    <string name="list_transactions_search_mode_default" translatable="false">1</string>
+    <string name="list_transactions_threshold_default" translatable="false">0</string>
+    <string name="list_update_freq_default" translatable="false">-1</string>
+    <string name="notifcation_new_providers">De nouveaux fournisseurs sont disponibles!</string>
+    <string name="pref_category_providers_warning_empty_selection_short">Sélectionnez au moins un fournisseur dans vos paramètres</string>
+
+    <string name="preference_category_about">A propos</string>
+    <string name="preference_category_about_mail_subject">Ma contribution à Optimize</string>
+    <string name="preference_category_about_pref_developers_summary">Faites-nous part de vos avis et suggestions</string>
+    <string name="preference_category_about_pref_developers_title">Contacter les développeurs</string>
+    <string name="preference_category_about_pref_rate_summary">Vous aimez l\'application? Notez-la sur Playstore</string>
+    <string name="preference_category_about_pref_rate_title">Noter l\'application</string>
+    <string name="preference_category_about_pref_share_summary">Partagez Optimize avec vos amis</string>
+    <string name="preference_category_about_pref_share_title">Partager</string>
+    <string name="preference_category_about_pref_version_title">Version de l\'application</string>
+    <string name="preference_category_about_share_desc">Je réalise des économies sur mes retraits mobiles. Fais pareil. Télécharge l\'appli.</string>
+    <string name="preference_category_settings">Paramètres de base</string>
+    <string name="preference_category_settings_pref_auto_update_off">Désactivé</string>
+    <string name="preference_category_settings_pref_auto_update_on">Activé</string>
+    <string name="preference_category_settings_pref_auto_update_title">Mise à jour automatique</string>
+    <string name="preference_category_settings_pref_manual_update_failed">Echec de la mise à jour</string>
+    <string name="preference_category_settings_pref_manual_update_summary">m.à.j. le %1$s à %2$s</string>
+    <string name="preference_category_settings_pref_manual_update_title">Mise à jour manuelle</string>
+    <string name="preference_category_settings_pref_manual_update_updating">Mise à jour en cours…</string>
+    <string name="preference_category_settings_pref_providers_none_selected">Aucun fournisseur sélectionné</string>
+    <string name="preference_category_settings_pref_providers_title">Fournisseurs à afficher</string>
+    <string name="preference_category_settings_pref_providers_title_short">Fournisseurs</string>
+    <string name="preference_category_settings_pref_update_frequency_title">Fréquence des mises à jour</string>
+    <string name="preference_category_theme">Thème</string>
+    <string name="preference_category_transactions">Paramètres d\'optimisation</string>
+    <string name="preference_category_transactions_filter_by_title">Filtrer les résultats par</string>
+    <string name="preference_category_transactions_search_mode_title">Priorité</string>
+    <string name="preference_category_transactions_search_mode_title_short">Priorités</string>
+    <string name="preference_category_transactions_threshold_title">Précison</string>
+    <string name="preference_category_services_dial_behaviour_title">Mode USSD</string>
+    <string name="preference_category_services_dial_behaviour_summary_on">Optimize sélectionnera l\'opérateur approprié parmi ceux présents sur votre appareil, puis appellera le code court</string>
+    <string name="preference_category_services_dial_behaviour_summary_off">Optimize composera le code court approprié, puis laissera le choix de l\'opérateur avec lequel appeler</string>
+
+    <string name="pricing_line_header_fees">Frais</string>
+    <string name="pricing_line_header_from">De</string>
+    <string name="pricing_line_header_to">A</string>
+    <string name="pricing_operation_type_inbound_transactions">Transactions intra-opérateurs</string>
+    <string name="pricing_operation_type_outbound_transactions">Transactions inter-opérateurs</string>
+    <string name="pricing_operation_type_withdrawals">Retraits</string>
+    <string name="pricing_toolbar_subtitle_currency">Montants en %1$s</string>
+
+    <string name="result_line_header_transaction_amount" translatable="false">Transactions</string>
+    <string name="result_line_header_transaction_amount_text">Retrait de %1$s %2$s</string>
+    <string name="result_line_header_transaction_fee">Frais</string>
+    <string name="result_line_header_transaction_fee_text" translatable="false">%1$s %2$s</string>
+    <string name="result_line_header_transaction_no" translatable="false">N°</string>
+    <string name="result_subhead_desc">Frais: %1$s %2$s, Epargné: %3$s %2$s</string>
+    <string name="result_menu_share_string">Retirez %1$s %2$s en %3$s retrait(s) de %4$s et économisez %5$s %2$s avec %6$s</string>
+
+    <string name="search_bar_button_text_optimize">Optimiser</string>
+    <string name="search_bar_input_helper_text__form_to">de %1$s %2$s à %3$s %2$s</string>
+    <string name="search_bar_input_text_error_empty_field">Saisissez un montant valide</string>
+    <string name="search_bar_input_text_hint">Tapez un montant</string>
+    <string name="search_empty_view_text">Saisissez un montant ci-dessus, puis cliquez sur Optimiser pour afficher les résultats</string>
+
+    <string name="string_array_theme_entries_battery">Géré par l\'économiseur de batterie</string>
+    <string name="string_array_theme_entries_dark">Sombre</string>
+    <string name="string_array_theme_entries_light">Clair</string>
+    <string name="string_array_theme_entries_system">Géré par Android</string>
+    <string name="string_array_transactions_filter_by_amount_saved">Montant économisé</string>
+    <string name="string_array_transactions_filter_by_fee_saved">Frais les plus bas</string>
+    <string name="string_array_transactions_search_mode_prefer_highest_savings">Préférer l\'économie réalisée</string>
+    <string name="string_array_transactions_search_mode_prefer_lowest_transactions">Préférer le nombre de transactions</string>
+    <string name="string_array_transactions_threshold_all_tree">Elevée</string>
+    <string name="string_array_transactions_threshold_three">Modérée</string>
+    <string name="string_array_transactions_threshold_two">Faible</string>
+    <string name="string_array_update_freq_entries_system_managed">Géré par l\'application</string>
+    <string name="string_array_list_result_item_menu_share" translatable="false">@string/preference_category_about_pref_share_title</string>
+    <string name="string_array_list_result_item_menu_transfer_amount">Faire un transfert</string>
+
+    <string name="transfer_funds_input_number_hint">N° compte</string>
+    <string name="transfer_funds_input_number_invalid">N° compte invalide</string>
+    <string name="transfer_funds_input_amount_hint">Montant</string>
+    <string name="transfer_funds_action_transfer_hint">Transférer avec %1$s</string>
+    <string name="transfer_funds_dialog_select_number">Numéro de compte à utiliser</string>
+    <string name="transfer_funds_include_withdrawal_fee">Frais retrait</string>
+    <string name="transfer_funds_check_phone_number">Assurez-vous que le numéro sélectionné est correct et qu\'il appartient au bon opérateur réseau avant d\'effectuer un transfert d\'argent</string>
+    <string name="transfer_funds_check_phone_number_understood">Ne plus me rappeler</string>
+
+    <string name="rationale_grant_read_phone_state">Optimize a besoin d\'accéder à l\'état du téléphone afin de déterminer les opérateurs réseau actifs. Sans cette permission certaines fonctionnalités seront indisponibles</string>
+    <string name="rationale_grant_read_contacts">Optimize a besoin d\'accéder à vos contacts. Sans cette permission vous ne pourrez pas importer des contacts depuis votre annuaire</string>
+    <string name="rationale_grant_call_phone">Optimize a besoin de votre permission pour effectuer des appels. Sans cette permission certaines fonctionnalités seront indisponibles</string>
+    <string name="rationale_sim_required">Un opérateur réseau actif est nécessaire pour utiliser cette fonctionnalité</string>
+    <string name="rationale_sim_required_title">Pas d\'opérateur réseau actif</string>
+    <string name="rationale_mnc_for_sim_not_found">Impossible d\'effectuer un transfert d\'argent via le réseau %1$s. La carte SIM de l\'opérateur n\'est pas installée dans votre appareil</string>
+    <string name="rationale_gsm_device_required">Votre appareil doit être capable d\'effectuer des appels téléphoniques pour utiliser cette fonctionnalité</string>
+    <string name="rationale_permission_granted">Permission accordée. Veuillez réessayer.</string>
+
+</resources>

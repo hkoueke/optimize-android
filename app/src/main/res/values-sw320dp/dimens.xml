@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_no_connectivity_layout_constraintGuide_end">190dp</dimen>
+</resources>

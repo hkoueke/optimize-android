@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>app_number_format</key>
+        <value>%.0f</value>
+    </entry>
+    <entry>
+        <key>app_phone_number_length</key>
+        <value>9</value>
+    </entry>
+    <entry>
+        <key>app_currency</key>
+        <value>XAF</value>
+    </entry>
+</defaultsMap>

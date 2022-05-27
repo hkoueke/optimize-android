@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="table_row_trx_count" format="integer" type="id" />
+    <item name="table_row_trx" format="integer" type="id" />
+    <item name="table_row_fee" format="integer" type="id" />
+    <item name="table_row" format="integer" type="id" />
+</resources>
