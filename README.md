@@ -2,7 +2,7 @@
 [DEPRECATED] Android app Written in Java, aimed at providing a stable algorithm to help reduce transaction fees to mobile money services users in Cameroon. App
 App can be found at https://play.google.com/store/apps/details?id=com.izigo.optimized&hl=en&gl=US
 
-NOTE: Providers pricing for mobile money services has chanded in 2022, this app is no longer relevant.
+NOTE: Providers pricing for mobile money services has changed in 2022, this app is no longer relevant. For educational purposes only.
 
 
 ![unnamed1](https://user-images.githubusercontent.com/9214164/170712239-3e121145-0021-42ff-8dd9-c1edaeb7d21a.png)
